@@ -15,7 +15,7 @@ public class Test {
 		Jeu jeu = new Jeu("Mario Kart", console);
 		
 		Client client = new Client("John", "Doe");
-				
+		Client client2 = new Client("Jane", "Doe");
 		Adresse adresse = new Adresse(10, "Avenue des Lilas", "Paris");
 		
 		Boutique boutique = new Boutique("Alerte Hit", adresse);
