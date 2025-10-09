@@ -1,10 +1,10 @@
 package nintendo.test;
 
 import nintendo.model.Adresse;
+import nintendo.model.Boutique;
 import nintendo.model.Client;
 import nintendo.model.Console;
 import nintendo.model.Jeu;
-import nintendo.model.boutique;
 
 public class Test {
 
@@ -18,8 +18,9 @@ public class Test {
 				
 		Adresse adresse = new Adresse(10, "Avenue des Lilas", "Paris");
 		
-		boutique boutique = new boutique("Alerte Hit", "Avenue des Lilas");
+		Boutique boutique = new Boutique("Alerte Hit", adresse);
 		
+		System.out.println("Test réussi");
 	}
 	
 	// class Boutique au lieu de class boutique
