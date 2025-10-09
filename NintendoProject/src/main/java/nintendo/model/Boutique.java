@@ -1,9 +1,9 @@
 package nintendo.model;
 
-public class boutique {
+public class Boutique {
 	private String nom; 
-	private String adresse;
-	public boutique(String nom, String adresse) {
+	private Adresse adresse;
+	public Boutique(String nom, Adresse adresse) {
 		super();
 		this.nom = nom;
 		this.adresse = adresse;
@@ -14,16 +14,17 @@ public class boutique {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public String getAdresse() {
+	public Adresse getAdresse() {
 		return adresse;
 	}
-	public void setAdresse(String adresse) {
+	public void setAdresse(Adresse adresse) {
 		this.adresse = adresse;
 	}
 	@Override
 	public String toString() {
-		return "boutique [nom=" + nom + ", adresse=" + adresse + "]";
-	} 
+		return "Boutique [nom=" + nom + ", adresse=" + adresse.toString() + "]";
+	}
+
 	
 
 }
