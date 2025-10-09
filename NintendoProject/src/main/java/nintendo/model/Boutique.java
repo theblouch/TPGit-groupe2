@@ -25,6 +25,4 @@ public class Boutique {
 		return "Boutique [nom=" + nom + ", adresse=" + adresse.toString() + "]";
 	}
 
-	
-
 }

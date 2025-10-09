@@ -3,6 +3,7 @@ package nintendo.model;
 public class Client {
 	private String nom;
 	private String prenom;
+	
 	public Client(String nom, String prenom) {
 		super();
 		this.nom = nom;

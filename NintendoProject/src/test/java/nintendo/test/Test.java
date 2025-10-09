@@ -21,7 +21,17 @@ public class Test {
 		Boutique boutique = new Boutique("Alerte Hit", adresse);
 		
 		System.out.println("Test réussi");
+		
+		//samson
+		Adresse adresssam = new Adresse(2, "rue de l'abbe pierre", "sein et marne");
+		Boutique boutiquesamson = new Boutique("x", adresssam);
+		
+		
+		
 	}
+	
+	
+	
 	
 	// class Boutique au lieu de class boutique
 	// Dans boutique, remplacer String adresse par Adresse adresse
