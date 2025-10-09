@@ -1,53 +1,48 @@
 package nintendo.model;
 import java.time.LocalDate;
 
-public class Console {
+public abstract class Console {
 
-	private String nom;
-	private double prix;
-	private LocalDate ddsortie;
-	
-	
-	public Console(String nom) {
-		super();
-		this.nom = nom;
-	}
+    private String nom;
+    private double prix;
+    private LocalDate ddsortie;
 
-	public Console(String nom, double prix, LocalDate ddsortie) {
-		super();
-		this.nom = nom;
-		this.prix = prix;
-		this.ddsortie = ddsortie;
-	}
+    public Console(String nom) {
+        this.nom = nom;
+    }
 
-	public double getPrix() {
-		return prix;
-	}
+    public Console(String nom, double prix, LocalDate ddsortie) {
+        this.nom = nom;
+        this.prix = prix;
+        this.ddsortie = ddsortie;
+    }
 
-	public void setPrix(double prix) {
-		this.prix = prix;
-	}
+    public double getPrix() {
+        return prix;
+    }
 
-	public LocalDate getDdsortie() {
-		return ddsortie;
-	}
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
 
-	public void setDdsortie(LocalDate ddsortie) {
-		this.ddsortie = ddsortie;
-	}
+    public LocalDate getDdsortie() {
+        return ddsortie;
+    }
 
-	public String getNom() {
-		return nom;
-	}
+    public void setDdsortie(LocalDate ddsortie) {
+        this.ddsortie = ddsortie;
+    }
 
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+    public String getNom() {
+        return nom;
+    }
 
-	@Override
-	public String toString() {
-		return "Console [nom=" + nom + ", prix=" + prix + ", ddsortie=" + ddsortie + "]";
-	}
-	
-	
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    @Override
+    public String toString() {
+        return "Console [nom=" + nom + ", prix=" + prix + ", ddsortie=" + ddsortie + "]";
+    }
 }
