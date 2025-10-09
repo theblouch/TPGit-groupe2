@@ -1,5 +1,8 @@
 package nintendo.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
@@ -19,7 +22,8 @@ public class Test {
 		Adresse adresse = new Adresse(10, "Avenue des Lilas", "Paris");
 		
 		Boutique boutique = new Boutique("Alerte Hit", adresse);
-		
+		List<Jeu> achatsClient = new ArrayList<>();
+        achatsClient.add(jeu);
 		System.out.println("Test réussi");
 		
 		//samson
